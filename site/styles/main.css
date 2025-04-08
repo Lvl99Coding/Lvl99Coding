@@ -1,0 +1,136 @@
+html {
+    box-sizing: border-box;
+}
+
+#top {
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    margin-left: -2em;
+    margin-right: -2em;
+}
+
+#top nav {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#top nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#top nav ul li {
+    display: inline;
+}
+
+#top nav a {
+    border-top: 4px solid transparent;
+    display: inline-block;
+    padding: 1em;
+    padding-bottom: 0.5em;
+    margin-top: -4px;
+}
+
+#top nav a:hover {
+    border-top: 4px solid greenyellow;
+}
+
+.width-wrap {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 3em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #283735;
+    color: #A46E5F;
+}
+
+.width-wrap no-border {
+    border-top: none;
+}
+
+hr {
+    border: none;
+    width: 50vw;
+    min-width: 300px;
+    max-width: 890px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border-bottom: 3px dotted greenyellow;
+}
+
+dt:after {
+    content: ":";
+}
+
+body {
+    background-color: #44828a;
+}
+
+a {
+    color: #5D9A8F
+}
+
+header a {
+    color: #44828a;
+}
+
+::selection {
+    background-color: black;
+}
+
+table th {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+table td {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+table thead {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+table tbody th {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+table tfoot {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+label {
+    display: block;
+}
+
+fieldset ul li label {
+    display: inline;
+}
+
+#send_button {
+    border: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    background-color: bisque;
+    color: firebrick;
+}
+
+input:user-invalid {
+    background-color: red;
+}
