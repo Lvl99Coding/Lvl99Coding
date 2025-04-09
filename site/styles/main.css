@@ -29,6 +29,10 @@ html {
     padding: 1em;
     padding-bottom: 0.5em;
     margin-top: -4px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 #top nav a:hover {
@@ -68,6 +72,8 @@ dt:after {
 
 body {
     background-color: #44828a;
+    font-family: Lustria;
+    line-height: 1.3em;
 }
 
 a {
@@ -133,4 +139,74 @@ fieldset ul li label {
 
 input:user-invalid {
     background-color: red;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Tienne;
+}
+
+h1 {
+    background-clip: text;
+    background: rgb(18, 53, 36);
+    background: linear-gradient(90deg, rgba(18, 53, 36, 1) 35%, rgba(0, 108, 255, 1) 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ol {
+    list-style-type: upper-roman;
+
+}
+
+#swampletics {
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+
+#radio_buttons_list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bio {
+    column-count: 3;
+    column-gap: 2em;
+}
+
+#course-table {
+    column-span: all;
+    margin-top: 1em;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+img {
+    max-width: 100%;
+}
+
+#picture-of-me {
+    padding: 2%;
+    background-color: white;
+    box-shadow: #A46E5F 0px 0px 10px;
+}
+
+footer {
+    font-size: 75%;
+    text-align: center;
+}
+
+#back-to-top {
+    text-shadow: #A46E5F 0px 0px 10px;
+    text-decoration: none;
 }
