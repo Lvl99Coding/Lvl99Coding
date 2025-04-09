@@ -28,7 +28,7 @@
     <div class=width-wrap>
         <header id="top">
             <nav>
-                <ul>
+                <ul id="nav-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="links.html">Links</a></li>
                     <li><a href="glossary.html">Glossary</a></li>
@@ -43,8 +43,8 @@
                 <a href="images/PictureOfMe.jpeg">
                     <img id="picture-of-me" src="images/150PThumbnail.jpeg" alt="Image of me at a waterfall 1"
                         sizes="(max-width:500px) 150px, 300px"
-                        srcset="images/150PThumbnail.jpeg 150w, images/300PThumbnail.jpeg 300w"
-                        alt="Image of me at a waterall 2">
+                        srcset="images/150PThumbnail.jpeg 150w, images/300PThumbnail.jpeg 300w">
+                    <img class="paperclip" src="images/paperclip.png" alt="Paperclip">
                 </a>
 
                 <p>My name is Caleb Tarantini, I'm 25 years old and was born in Echo Bay, Ontario.
@@ -152,60 +152,90 @@
                     </table>
                 </div>
             </div>
+
             <h2>My Favourite Things</h2>
 
-            <figure>
-                <a href="https://www.opeth.com/releases/albums">
-                    <img src="images/logo.jpg" alt="Sorceress album by Opeth" style="width:800px;height:650px" />
-                </a>
-                <figcaption>
-                    Album art of Opeth's album, "Sorceress"
-                </figcaption>
-            </figure>
+            <div class="favourites">
 
-            <h3>Favourite Albums</h3>
+                <input type="radio" name="favourite_radio_buttons" value="album_cover" id="album_cover" checked>
+                <label for="album_cover">
+                    <h3>Album Cover</h3>
+                </label>
 
-            <ol>
-                <li>Still Life - Opeth</li>
-                <li>Sorceress - Opeth</li>
-                <li>Dirt - Alice in Chains</li>
-            </ol>
+                <div>
+                    <figure>
+                        <a href="https://www.opeth.com/releases/albums">
+                            <img src="images/logo.jpg" alt="Sorceress album by Opeth"
+                                style="width:800px;height:650px" />
+                        </a>
+                        <figcaption>
+                            Album art of Opeth's album, "Sorceress"
+                        </figcaption>
+                    </figure>
+                </div>
 
-            <h3>Haiku</h3>
+                <input type="radio" name="favourite_radio_buttons" value="favourite_albums" id="favourite_albums">
+                <label for="favourite_albums">
+                    <h3>Albums</h3>
+                </label>
 
-            <p>
-                Losing its name<br />
-                A river<br />
-                Enters the sea<br />
-                <cite>
-                    by
-                    <span class="author">
-                        John Sandbach
-                    </span>
-                </cite>
-            </p>
+                <div>
+                    <ol>
+                        <li>Still Life - Opeth</li>
+                        <li>Sorceress - Opeth</li>
+                        <li>Dirt - Alice in Chains</li>
+                    </ol>
+                </div>
 
-            <h3>Public Domain Audiobook</h3>
+                <input type="radio" name="favourite_radio_buttons" value="haiku" id="haiku">
+                <label for="haiku">
+                    <h3>Haiku</h3>
+                </label>
 
-            <audio
-                src="https://ia600209.us.archive.org/11/items/adventures_sherlock_holmes_rg_librivox/adventuresholmes_01_doyle.mp3"
-                controls>
-                <a
-                    href="https://ia600209.us.archive.org/11/items/adventures_sherlock_holmes_rg_librivox/adventuresholmes_01_doyle.mp3">Adventures
-                    of Sherlock Holmes-Download</a>
-            </audio>
+                <div>
+                    <p>
+                        Losing its name<br />
+                        A river<br />
+                        Enters the sea<br />
+                        <cite>
+                            by
+                            <span class="author">
+                                John Sandbach
+                            </span>
+                        </cite>
+                    </p>
+                </div>
 
-            <h3>Youtube Video</h3>
+                <input type="radio" name="favourite_radio_buttons" value="favourite_book" id="favourite_book">
+                <label for="favourite_book">
+                    <h3>Public Domain Audiobook</h3>
+                </label>
 
+                <div>
+                    <audio
+                        src="https://ia600209.us.archive.org/11/items/adventures_sherlock_holmes_rg_librivox/adventuresholmes_01_doyle.mp3"
+                        controls>
+                        <a
+                            href="https://ia600209.us.archive.org/11/items/adventures_sherlock_holmes_rg_librivox/adventuresholmes_01_doyle.mp3">Adventures
+                            of Sherlock Holmes-Download</a>
+                    </audio>
+                </div>
 
-            <iframe id="swampletics" width="560" height="315"
-                src="https://www.youtube.com/embed/O9wG5jGP32M?si=hKpBeuLl8uztih8H" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
+                <input type="radio" name="favourite_radio_buttons" value="favourite_video" id="favourite_video">
+                <label for="favourite_video">
+                    <h3>Youtube Video</h3>
+                </label>
 
+                <div>
+                    <iframe id="swampletics" width="560" height="315"
+                        src="https://www.youtube.com/embed/O9wG5jGP32M?si=hKpBeuLl8uztih8H" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
 
+            </div>
         </main>
 
         <footer>
@@ -222,8 +252,7 @@
             <picture>
                 <source type="image/svg+xml" srcset="images/sc-logo/sc-logo.svg">
                 <img src="images/sc-logo/sc-logo.png" width="75" alt="Sault College logo 2"
-                    srcset="images/sc-logo/sc-logo.png, images/sc-logo/sc-logo_105.png 1.5x, images/sc-logo/sc-logo_140.png 2x"
-                    alt="Sault College logo 3">
+                    srcset="images/sc-logo/sc-logo.png, images/sc-logo/sc-logo_105.png 1.5x, images/sc-logo/sc-logo_140.png 2x">
             </picture>
 
         </footer>
