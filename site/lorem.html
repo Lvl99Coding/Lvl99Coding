@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="author" content="Caleb Tarantini">
     <meta name="description" content="This is a webpage I designed showing some of my favourite things.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CSD112</title>
     <link rel="icon" type="image/png" href="my-favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="my-favicon/favicon.svg" />
@@ -30,6 +31,23 @@
         footer {
             clear: both;
         }
+
+        .lorem-left {
+            float: left;
+        }
+
+        .lorem-right {
+            float: right;
+        }
+
+        @media screen and (max-width: 740px) {
+
+            .lorem-left,
+            .lorem-right {
+                float: none;
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -37,7 +55,9 @@
     <div class=width-wrap>
         <header id="top">
             <nav>
-                <ul>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="sandwich-icon"></label>
+                <ul id="nav-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="links.html">Links</a></li>
                     <li><a href="glossary.html">Glossary</a></li>
@@ -61,8 +81,7 @@
                 Aenean nisi elit, rutrum at consequat non, pretium nec nisl. Ut ultricies, purus nec vulputate
                 malesuada, augue dolor venenatis magna,
                 id ullamcorper ante nibh vitae orci.
-                <img id=lorem-image1 src="https://loremflickr.com/320/240" style="float: left;"
-                    alt="Lorem ipsum image 1">
+                <img id=lorem-image1 class=lorem-left src="https://loremflickr.com/320/240" alt="Lorem ipsum image 1">
             </p>
             <p id="lorem2">Phasellus at lacus augue. Nunc egestas massa sed nisl faucibus viverra sed vel ligula. Aenean
                 placerat porta gravida. Quisque efficitur vestibulum est, sed iaculis lacus congue vel. In hac habitasse
@@ -76,8 +95,9 @@
                 sit amet nisl pretium, porttitor ante at, dictum ex. Morbi dapibus tortor leo, nec dictum erat lacinia
                 id. Proin pharetra mattis neque et venenatis. Donec eget sem sem. Nullam varius congue ex eu venenatis.
                 Sed diam augue, tincidunt tincidunt commodo in, maximus eget lacus.</p>
-            <p id="lorem4"><img id=lorem-image2 src="https://loremflickr.com/320/240" style="float:right"
-                    alt="Lorem ipsum image 2">Suspendisse libero magna, commodo nec dui in, lacinia rutrum augue. Ut et
+            <p id="lorem4"><img id=lorem-image2 class=lorem-right src="https://loremflickr.com/320/240"
+                    style="float:right" alt="Lorem ipsum image 2">Suspendisse libero magna, commodo nec dui in, lacinia
+                rutrum augue. Ut et
                 arcu sit amet odio molestie viverra a sit amet sem. Proin eleifend vitae felis non posuere. Pellentesque
                 non auctor felis. Quisque tempor semper neque ac blandit. Aenean gravida turpis fringilla magna feugiat
                 aliquam. Quisque aliquet aliquam lectus, sit amet tristique massa interdum sed.</p>
@@ -104,8 +124,7 @@
             <picture>
                 <source type="image/svg+xml" srcset="images/sc-logo/sc-logo.svg">
                 <img src="images/sc-logo/sc-logo.png" width="75" alt="Sault College logo 2"
-                    srcset="images/sc-logo/sc-logo.png, images/sc-logo/sc-logo_105.png 1.5x, images/sc-logo/sc-logo_140.png 2x"
-                    alt="Sault College logo 3">
+                    srcset="images/sc-logo/sc-logo.png, images/sc-logo/sc-logo_105.png 1.5x, images/sc-logo/sc-logo_140.png 2x">
             </picture>
 
         </footer>
